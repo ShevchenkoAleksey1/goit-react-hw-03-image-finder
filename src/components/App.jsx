@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import axios from 'axios';
+import Searchbar from './Searchbar/Searchbar';
+import ImageGallery from './ImageGallery/ImageGallery';
 
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 axios.defaults.headers.common['x-api-key'] = process.env.REACT_APP_API_KEY;
@@ -16,6 +18,11 @@ export class App extends Component {
   }
 
   render() {
-    return <></>;
+    return (
+      <>
+        <Searchbar />;
+        <ImageGallery />;
+      </>
+    );
   }
 }
