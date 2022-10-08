@@ -4,7 +4,7 @@ import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
 const ImageGallery = () => {
   return (
     <ul className={styles.imageGallery}>
-      <ImageGalleryItem />;
+      <ImageGalleryItem />
     </ul>
   );
 };

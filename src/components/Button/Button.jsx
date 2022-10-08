@@ -1,7 +1,7 @@
 // import styles from '';
 
-const Button = () => {
-  return <button>Load more</button>;
+const Button = ({ onClick }) => {
+  return <button onClick={onClick}>Load more</button>;
 };
 
 export default Button;
